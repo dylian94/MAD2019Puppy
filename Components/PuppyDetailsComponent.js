@@ -13,10 +13,10 @@ export default class PuppyDetailsComponent extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.title}>Puppy</Text>
-                <Text>Name: {this.data.name}</Text>
-                <Text>Age: {this.data.age}</Text>
-                <Button />
+                <Text style={styles.titleText}>Puppy</Text>
+                <Text style={styles.infoText}>Name: {this.data.name}</Text>
+                <Text style={styles.infoText}>Age: {this.data.age}</Text>
+                <Button title="Alert" />
             </View>
         );
     }
@@ -32,8 +32,13 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
+        fontSize: 30
     },
-    title: {
-        fontWeight: 'bold'
-    }
+    titleText: {
+        fontSize: 60,
+        fontWeight: 'bold',
+    },
+    infoText: {
+        fontSize: 54,
+    },
 });
